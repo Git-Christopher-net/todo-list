@@ -13,6 +13,7 @@
   <div style="text-align: center;">
   <img src="img/inicio.webp" width="300" height="200" alt="pantalla con pagina web" /> </div>
   <!-- Formulario Que se pone para la tarea -->
+  <div style="text-align: center;">
   <form id="form-tarea"> <!-- se nombra en la arrte del js -->
     <label for="nombre">Nombre de la tarea:</label>
     <input id="nombre" type="text" name="nombre" required /><br><br> <!-- Formulario ponemos required para justamente hacerlo oblifgatorio  -->
@@ -57,12 +58,12 @@
     
       <!-- boton calve para la muestra de la tarea tras llenar el listado-->
     <button type="submit">Agregar tarea</button>
-  </form> <!-- cerramos formualrio-->
-
-  <h2>Lista de Tareas:</h2>
+  </form> </div><!-- cerramos formualrio-->
+  <div style="text-align: center;">
+  <h2>Lista de Tareas:</h2> </div>
   <!-- Aquí se generará la lista de tareas -->
   <ul id="lista-tareas"></ul> <!-- se nombra en la arrte del js -->
 <!-- lo identificamos para el java -->
-  <script src="app.js"></script>
+  <script src="app.js"></script> 
 </body>
 </html>
