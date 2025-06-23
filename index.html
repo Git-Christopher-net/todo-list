@@ -3,45 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista de Tareas</title>
+  <title>Lista de Tareas barra TODO LIST Christopher Suquillo</title>
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-  <h1>Mi Lista de Tareas</h1>
-  <p>Mi Nombre: Christopher Suquillo </p>
+  <h1>Mi Lista de Tareas para todo list</h1>
+  <p>Mi Nombre como estudiante de la Salesiana: Christopher Suquillo </p>
 
-  <!-- Formulario para agregar tareas -->
-  <form id="form-tarea">
+  <div style="text-align: center;">
+  <img src="img/inicio.webp" width="300" height="200" alt="pantalla con pagina web" /> </div>
+  <!-- Formulario Que se pone para la tarea -->
+  <form id="form-tarea"> <!-- se nombra en la arrte del js -->
     <label for="nombre">Nombre de la tarea:</label>
-    <input type="text" id="nombre" name="nombre" required /><br><br>
+    <input id="nombre" type="text" name="nombre" required /><br><br> <!-- Formulario ponemos required para justamente hacerlo oblifgatorio  -->
+
+     <!-- Diseñamos la parte de fehcha con sus id-->
 
     <label for="fecha">Fecha de entrega:</label>
-    <input type="date" id="fecha" name="fecha" required /><br><br>
+    <input id="fecha" type="date" name="fecha" required /><br><br>
+
+    <!-- Para el cuadro de la descripcion usemo el text area-->
 
     <label for="descripcion">Descripción:</label>
-    <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+    <!-- este me sirve para el mensaje control para la edición mutilínea de texto sin formato-->
+    <textarea name="descripcion" id="descripcion" required></textarea><br><br>
 
-    <label for="tipo">Tipo de tarea:</label>
-    <select id="tipo" name="tipo" required>
-      <option value="trabajo">Trabajo</option>
-      <option value="examen">Examen</option>
-      <option value="proyecto">Proyecto</option>
+    <!-- Para el cuadro de la descripcion usemo el text area-->
+
+
+    
+    <!-- Para la arte de las el combox para la realizacion de demas cosas-->
+    <label for="tipo">Tipo de tarea:</label> 
+    <select name="tipo" id="tipo"  required>
+
+ <!-- Coloquemos parametros los que se me ocurren-->
+      <option value="trabajo">Elaboración Trabajos</option>
+      <option value="examen">Desarrollo Examenes</option>
+      <option value="proyecto">Proyectos de laboratorio</option>
+      <option value="hobby">Hobby desarrollo de nuevas habilidades</option>
+
+ <!-- separemos mas esta seccion-->
     </select><br><br>
 
-    <label for="prioridad">Prioridad:</label>
-    <select id="prioridad" name="prioridad" required>
-      <option value="alta">Alta</option>
-      <option value="media">Media</option>
-      <option value="baja">Baja</option>
-    </select><br><br>
+     <!-- Hacemos el mismo aprte que con los trabajos pero estos son niveles de riesgo para estudiantes-->
+    <label for="prioridad">Prioridad en la que estamos:</label>
+    <select name="prioridad" id="prioridad"  required>
+      <option value="alta"> Realmente Alta Deberian empezar ya</option>
+      <option value="media">No es comun es Media, aun hay tiempo de entrega pero ya tomalo en cuenta</option>
+      <option value="baja">Baja, esta libre puedes dejarla y enfocarte en los demas niveles por ahora </option> 
 
+    </select><br><br> 
+      <!-- separemos mas esta seccion-->
+    
+      <!-- boton calve para la muestra de la tarea tras llenar el listado-->
     <button type="submit">Agregar tarea</button>
-  </form>
+  </form> <!-- cerramos formualrio-->
 
   <h2>Lista de Tareas:</h2>
   <!-- Aquí se generará la lista de tareas -->
-  <ul id="lista-tareas"></ul>
-
+  <ul id="lista-tareas"></ul> <!-- se nombra en la arrte del js -->
+<!-- lo identificamos para el java -->
   <script src="app.js"></script>
 </body>
 </html>

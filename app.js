@@ -1,22 +1,22 @@
-// Obtener el formulario y la lista de tareas
+// llevamos el codigogtml el js el formulario y la lista de tareas
 const form = document.getElementById("form-tarea");
 const listaTareas = document.getElementById("lista-tareas");
 
-// Función para manejar la adición de tareas
+// Al momento de rellenar los formularios
 form.addEventListener("submit", function (event) {
-  event.preventDefault(); // Evitar que se recargue la página al enviar el formulario
+  event.preventDefault(); // Nota para que cuando se envie debe tener el contenido
 
-  // Obtener los valores de los campos del formulario
+  // Esta perte junto con el id se llega a la parte de la pagina y llegue a las lista
   const nombre = document.getElementById("nombre").value;
   const fecha = document.getElementById("fecha").value;
   const descripcion = document.getElementById("descripcion").value;
   const tipo = document.getElementById("tipo").value;
   const prioridad = document.getElementById("prioridad").value;
 
-  // Validar que todos los campos estén completos
+  // esta parte para que no queden vacios y me de problemas
   if (!nombre || !fecha || !descripcion || !tipo || !prioridad) {
-    alert("Por favor, complete todos los campos.");
-    return; // Si algún campo está vacío, no se agrega la tarea
+    alert("Recuerrda que todos los datos estan en obligatorios, porfavor llena completamente.");
+    return; // Si algúna casilla esta sin datos se da de baja
   }
 
   // Crear un objeto para representar la tarea

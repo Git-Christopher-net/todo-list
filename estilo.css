@@ -1,29 +1,28 @@
-/* Estilos generales */
+/* Estilos generales para la lista de tareas inicio */
+
+h1 {
+    text-align: center;
+    color: #4cafaa;
+    margin-top: 20px;
+  }
+
+  h2 {
+    color: #4cafa7;
+    margin-top: 30px;
+  }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #00f0bcb2;
     margin: 0;
     padding: 0;
     color: #333;
   }
-  
-  h1 {
-    text-align: center;
-    color: #4CAF50;
-    margin-top: 20px;
-  }
-  
-  h2 {
-    color: #4CAF50;
-    margin-top: 30px;
-  }
-  
   p {
     text-align: center;
     font-size: 1.1em;
   }
   
-  /* Formulario */
+  /* Formulario donde se colocan todos los datos*/
   form {
     background-color: #fff;
     padding: 20px;
@@ -34,7 +33,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
   }
-  
+    /*el texto*/
   label {
     font-weight: bold;
     display: block;
@@ -46,12 +45,12 @@ body {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid #4749d6;
     font-size: 1em;
   }
   
   input:focus, textarea:focus, select:focus {
-    border-color: #4CAF50;
+    border-color: #4924ee;
     outline: none;
   }
   
@@ -61,7 +60,7 @@ body {
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #4c20e9;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -69,12 +68,12 @@ body {
     cursor: pointer;
     font-size: 1.1em;
   }
-  
+    /* para pasar la fechita del teclado*/
   button:hover {
-    background-color: #45a049;
+    background-color: #0a5dca;
   }
   
-  /* Estilos de la lista de tareas */
+  /* Estilos de la lista de tareas donde se muestra lo que se coloco en el formulario */
   #lista-tareas {
     list-style-type: none;
     padding: 0;
@@ -83,14 +82,14 @@ body {
   }
   
   .tarea {
-    background-color: #fff;
+    background-color: #7749f7;
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(233, 61, 61, 0.1);
     display: flex;
     flex-direction: column;
-    border-left: 5px solid #4CAF50;
+    border-left: 5px solid #1a90ff;
   }
   
   .tarea h3 {
@@ -112,20 +111,20 @@ body {
   }
   
   .tarea .alta {
-    color: red;
+    color: rgb(241, 106, 15);
   }
   
   .tarea .media {
-    color: orange;
+    color: rgb(223, 220, 63);
   }
   
   .tarea .baja {
-    color: green;
+    color: rgb(38, 66, 38);
   }
   
   .tarea button {
     align-self: flex-end;
-    background-color: #f44336;
+    background-color: #1f10f3;
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 0.9em;
@@ -135,13 +134,13 @@ body {
   }
   
   .tarea button:hover {
-    background-color: #e53935;
+    background-color: #4625ff;
   }
   
   /* Media Queries para Responsividad */
   
-  /* Pantallas pequeñas (dispositivos móviles) */
-  @media (max-width: 768px) {
+  /* Pantallas pequeñas (para celulares) */
+  @media (max-width: 800px) {
     body {
       padding: 10px;
     }
@@ -184,8 +183,8 @@ body {
     }
   }
   
-  /* Pantallas muy pequeñas (móviles en modo retrato) */
-  @media (max-width: 480px) {
+  /* Pantallas mas pequeñas hechas a asi  */
+  @media (max-width: 450px) {
     h1, h2 {
       font-size: 1.3em;
     }
