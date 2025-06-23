@@ -1,0 +1,217 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #4CAF50;
+    margin-top: 30px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  /* Formulario */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos de la lista de tareas */
+  #lista-tareas {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 800px;
+  }
+  
+  .tarea {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #4CAF50;
+  }
+  
+  .tarea h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  .tarea p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .tarea .tipo, .tarea .prioridad {
+    font-weight: bold;
+  }
+  
+  .tarea .prioridad {
+    margin-top: 10px;
+  }
+  
+  .tarea .alta {
+    color: red;
+  }
+  
+  .tarea .media {
+    color: orange;
+  }
+  
+  .tarea .baja {
+    color: green;
+  }
+  
+  .tarea button {
+    align-self: flex-end;
+    background-color: #f44336;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .tarea button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Media Queries para Responsividad */
+  
+  /* Pantallas pequeñas (dispositivos móviles) */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    h1, h2 {
+      font-size: 1.5em;
+    }
+  
+    form {
+      width: 100%;
+      margin-top: 20px;
+      padding: 15px;
+    }
+  
+    label {
+      font-size: 0.9em;
+    }
+  
+    input, textarea, select {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+    }
+  
+    .tarea {
+      flex-direction: column;
+      padding: 12px;
+    }
+  
+    .tarea button {
+      width: 100%;
+      padding: 8px;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Pantallas muy pequeñas (móviles en modo retrato) */
+  @media (max-width: 480px) {
+    h1, h2 {
+      font-size: 1.3em;
+    }
+  
+    form {
+      padding: 10px;
+    }
+  
+    input, textarea, select {
+      font-size: 0.85em;
+    }
+  
+    button {
+      font-size: 1em;
+    }
+  
+    .tarea h3 {
+      font-size: 1.2em;
+    }
+  
+    .tarea p {
+      font-size: 0.9em;
+    }
+  
+    .tarea button {
+      font-size: 0.9em;
+    }
+  }
+  

@@ -8,9 +8,39 @@
 </head>
 <body>
   <h1>Mi Lista de Tareas</h1>
-  <p>Nombre del estudiante: __________________________</p>
+  <p>Mi Nombre: Christopher Suquillo </p>
 
-  <!-- Aquí irá el formulario y la lista generada con JavaScript -->
+  <!-- Formulario para agregar tareas -->
+  <form id="form-tarea">
+    <label for="nombre">Nombre de la tarea:</label>
+    <input type="text" id="nombre" name="nombre" required /><br><br>
+
+    <label for="fecha">Fecha de entrega:</label>
+    <input type="date" id="fecha" name="fecha" required /><br><br>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+
+    <label for="tipo">Tipo de tarea:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="trabajo">Trabajo</option>
+      <option value="examen">Examen</option>
+      <option value="proyecto">Proyecto</option>
+    </select><br><br>
+
+    <label for="prioridad">Prioridad:</label>
+    <select id="prioridad" name="prioridad" required>
+      <option value="alta">Alta</option>
+      <option value="media">Media</option>
+      <option value="baja">Baja</option>
+    </select><br><br>
+
+    <button type="submit">Agregar tarea</button>
+  </form>
+
+  <h2>Lista de Tareas:</h2>
+  <!-- Aquí se generará la lista de tareas -->
+  <ul id="lista-tareas"></ul>
 
   <script src="app.js"></script>
 </body>
